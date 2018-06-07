@@ -16,6 +16,7 @@ kids_data.each_line do |kid|
   filename    = 'letters/nice/' + name + '.txt'
   letter_text = ERB.new(nice_letter, nil, '-').result(binding)
 
+
   puts "Writing #{filename}."
   File.write(filename, letter_text)
 
